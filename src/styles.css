@@ -1,6 +1,6 @@
 
 html, body { height: 100%;
-background-color:red !important ; }
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .searchform{
     border: 1px solid #fefefe;
