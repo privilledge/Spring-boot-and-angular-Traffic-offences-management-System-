@@ -1,0 +1,60 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="col-12 mb-4">
+
+                <!--Offense Details-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Offense Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="ownerFirstName">Name</label>
+                                            <input type="text" id="name" class="form-control" [(ngModel)]="offense.name" name="name" required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="description">Fine</label>
+                                            <input type="numebr" id="price" class="form-control" [(ngModel)]="offense.price" name="price" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-12">
+                                            <label for="ownerFirstName">Description</label>
+                                            <textarea id="description" class="form-control" [(ngModel)]="offense.description" name="description" required></textarea>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <hr class="my-4">
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <button type="submit" class="btn mb-2 btn-outline-primary" (click)="save()">Save
+                                            </button> &nbsp;
+                                            <button type="submit" class="btn mb-2 btn-outline-danger" (click)="goback()">Cancel
+                                            </button> &nbsp;
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /. card-body -->
+                        </div>
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>
+<!-- main -->

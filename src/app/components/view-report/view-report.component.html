@@ -1,0 +1,83 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="col-12 mb-4">
+
+                <!--Report Details-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Report Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="ReportsFirstName"><b>Full Name : </b>{{report.ownerName}}</label>
+                                        
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname"><b>Gender : </b>{{report.plateNumber}}</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="licenseNumber"><b>License number : </b>{{report.vehicleId}}</label>
+                                             </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="nationality"><b>Nationality : </b>{{report.model}}</label>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="reportFirstName"><b>Email : </b>{{report.info}}</label>
+                                       
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname"><b>Contact Number : </b>{{report.address}}</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="dob"><b>Date of birth : </b>{{report.natId}}</label>
+                                          
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="mobile"><b>Nationa ID number : </b>{{report.phone}}</label>
+                                          
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="my-4">
+                                  
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <button type="submit" class="btn mb-2 btn-outline-primary" (click)="goback()" >Okay
+                                            </button> &nbsp;
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /. card-body -->
+                        </div>
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>
+<!-- main -->

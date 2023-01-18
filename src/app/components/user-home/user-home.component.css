@@ -1,0 +1,15 @@
+.main-content{
+    background-image:url('../../../assets/images/banner.png') !important;
+    background-size: cover;
+    opacity: 0.8;
+   
+}
+.overlay{
+    background-color: rgba(0, 0, 100, 0.9) !important;
+}
+.description{
+    text-align:center;
+}
+.welcome-tag{
+    margin-top:20%;
+}

@@ -1,0 +1,85 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="col-12 mb-4">
+
+                <!--Officer Details-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Officer Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="officerFirstName"><b>Full Name : </b>{{officer.name}}</label>
+                                        
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname"><b>Gender : </b>{{officer.gender}}</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="licenseNumber"><b>EC number : </b>{{officer.ecNum}}</label>
+                                             </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="nationality"><b>Station : </b>{{officer.station}}</label>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="officerFirstName"><b>Email : </b>{{officer.email}}</label>
+                                       
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="mobile"><b>Nationa ID number : </b>{{officer.natId}}</label>
+                                          
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="address"><b>Address : </b>{{officer.address}}</label>
+                                           
+                                         </div>
+                                        
+                                       
+                                    </div>
+                                    <div class="form-row">
+                                     
+                                    
+                                      </div>
+                                    <hr class="my-4">
+                                  
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <button type="submit" class="btn mb-2 btn-outline-primary" (click)="goback()" >Back
+                                            </button> &nbsp;
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /. card-body -->
+                        </div>
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>
+<!-- main -->

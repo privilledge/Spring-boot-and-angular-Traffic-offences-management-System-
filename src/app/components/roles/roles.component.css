@@ -1,0 +1,14 @@
+.card-header{
+    padding: 0.4rem 0.5rem;
+}
+
+.card-body{
+    padding-top: 0.2rem;
+padding-bottom: 0.2rem;
+padding-left: 0.7rem;
+padding-right: 0.7rem;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0.2rem !important;
+  }

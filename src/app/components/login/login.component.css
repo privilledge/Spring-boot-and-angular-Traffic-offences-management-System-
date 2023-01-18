@@ -1,0 +1,23 @@
+/* .container{
+    display: block;
+    text-align: center;
+}
+form{
+    width:80%;
+    display: inline-block;
+} */
+.container{
+    display: block;
+    text-align: center;
+}
+
+form{
+    width:80%;
+    text-align: center;
+    display: inline-block;
+}
+.login{
+    margin-left:10%;
+}
+
+

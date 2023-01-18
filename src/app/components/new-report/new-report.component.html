@@ -1,0 +1,88 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="col-12 mb-4">
+
+                <!--Driver Details-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Vehicle Information</strong>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Plate Number</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.plateNumber" name="name" required >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Vehicle identifiction number</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.vehicleId"  name="name" required >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Car model</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.model"  name="name" required >
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Additional Information</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.info"  name="name" required >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <strong class="card-title">Owner's Information</strong>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Name of Owner</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.ownerName"  name="name" required >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Telephone Number</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.phone" name="name" required >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">Address</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.address" name="name" required >
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName">National Id number</label>
+                                            <input type="text" id="name" class="form-control select2" [(ngModel)]="report.natId" name="name" required >
+                                        </div>
+                                        <hr class="my-4">
+                                        <div class="form-row">
+                                            <div class="form-group ">
+                                                <button type="submit" class="btn mb-2 btn-outline-primary" (click)="addNewReport()">Send Report
+                                                </button> &nbsp;
+                                                <button type="submit" class="btn mb-2 btn-outline-danger" >Cancel
+                                                </button> &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <!-- /. card-body -->
+                        </div>
+                        
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>
+<!-- main -->

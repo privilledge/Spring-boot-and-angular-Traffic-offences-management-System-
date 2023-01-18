@@ -1,0 +1,93 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+
+            <div class="col-12 mb-4">
+
+                <!--Driver Details-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Driver Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName"><b>Full Name : </b>{{driver.name}}</label>
+                                        
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname"><b>Gender : </b>{{driver.gender}}</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="licenseNumber"><b>License number : </b>{{driver.licenceNumber}}</label>
+                                             </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="nationality"><b>Nationality : </b>{{driver.nationality}}</label>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="driverFirstName"><b>Email : </b>{{driver.email}}</label>
+                                       
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastname"><b>Contact Number : </b>{{driver.mobile}}</label>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="dob"><b>Date of birth : </b>{{driver.dob}}</label>
+                                          
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="mobile"><b>Nationa ID number : </b>{{driver.natId}}</label>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                            <label for="address"><b>Address : </b>{{driver.address}}</label>
+                                           
+                                         </div>
+                                    
+                                        <div class="form-group col-md-6">
+                                            <label for="image"><b>Driver's Age : </b>{{driver.age}}</label>
+                                           
+                                        </div>
+                                      </div>
+                                    <hr class="my-4">
+                                  
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <button type="submit" class="btn mb-2 btn-outline-primary" (click)="goback()" >Okay
+                                            </button> &nbsp;
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /. card-body -->
+                        </div>
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>
+<!-- main -->

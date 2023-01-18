@@ -1,0 +1,126 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 mb-4">
+
+                <!--Vendor Details-->
+                <div class="row">
+                    <div class="col-md-12 my-4">
+                        <h2 class="h4 mb-1" style="  margin-bottom: 0.5rem !important;">Add New Role</h2>
+                    </div>
+                    <div class="col-md-12">
+                        
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <strong class="card-title">Role Details</strong>
+                            </div>
+                            <div class="card-body">
+                                <form >
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-lg-12">
+                                            <label for="ownerFirstName">Name</label>
+                                            <input type="text" id="name" class="form-control" [(ngModel)]="role.name" name="name" required>
+                                        </div>
+
+                                    </div>
+                                    <hr class="my-4" style="  margin-top: 12px !important; margin-bottom: 12px !important;">
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-3">
+                                            <button type="submit" class="btn mb-2 btn-outline-success">
+                                                <span class='bx bx-save' style="font-size:large" (click)="saveRole()"> Add Role</span>
+                                            </button> &nbsp;
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /. card-body -->
+                        </div>
+                        <!-- /. card -->
+                    </div>
+                    <!-- /. col -->
+                </div>
+                <!-- /. end-section -->
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <div class="row">
+                    <!-- Small table -->
+                    <div class="col-md-12 my-4">
+                        <h2 class="h4 mb-1">Roles</h2>
+                        <p class="mb-3">List of all customers registered on the marketplace</p>
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <!-- table -->
+                                <table class="table table-borderless table-hover">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="all2">
+                                                    <label class="custom-control-label" for="all2"></label>
+                                                </div>
+                                            </td>
+                                            <th>
+                                                <!--User-->
+                                            </th>
+                                            <th>ID</th>
+                                            <th>Name </th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="t_body">
+                                        <tr style="line-height: 1 !important;"  *ngFor="let roles of roles">
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="2474">
+                                                    <label class="custom-control-label" for="2474"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-md">
+                                                    <img src="http://localhost:4100/brands/nike.jpg" alt="..."
+                                                        class="avatar-img rounded-circle">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <!--                            <p class="mb-0 text-muted"><strong>Brown, Asher D.</strong></p>-->
+                                                <small class="mb-0 text-muted">{{roles.id}}</small>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 text-muted">{{roles.name}}</p>
+                                            </td>
+
+                                            <td>
+                                                <button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="text-muted sr-only">Action</span>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" routerLink="/edit_user">Edit</a>
+                                                    <a class="dropdown-item" routerLink="/view_user"> View</a>
+                                                    <a class="dropdown-item">Delete</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- customized table -->
+                </div>
+            </div>
+            <!-- .col-12 -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container-fluid -->
+
+</main>

@@ -1,0 +1,37 @@
+
+html, body { height: 100%;
+background-color:red !important ; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.searchform{
+    border: 1px solid #fefefe;
+    width:78% !important;
+    border-radius:4px;
+  
+}
+.fe-menu{
+    font-size:22px;
+}
+.search{
+    border: none !important;
+}
+.my-pagination .ngx-pagination .current {
+    padding: 0.4875rem 1rem !important;
+    background: #0b0b45 !important;
+    color: #fefefe;
+    cursor: pointer;
+}
+.navbar-toggler{
+    margin-bottom:8px !important;
+}
+.topnav button{
+    color: #fff !important;
+  
+}
+.wrapper .topnav{
+    padding-top:-27px;
+    background-color: #0b0b45;
+    height:60px;
+}
+.form-inline h5{
+    color: #fff !important;
+}

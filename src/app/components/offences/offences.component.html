@@ -1,0 +1,86 @@
+<main role="main" class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row">
+                    <!-- Small table -->
+                    <div class="col-md-12 my-4">
+                        <h2 class="h4 mb-1">Offenses</h2>
+                        <p class="mb-3">List of all offenses that can be commited.</p>
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="toolbar">
+                                    <form class="form">
+                                        <div class="form-row">
+                                            <div class="form-group col-auto mr-auto" style="display: hidden;">
+                                                <label class="my-1 mr-2 sr-only" for="inlineFormCustomSelectPref1">Show</label>
+                                                <select class="custom-select mr-sm-2" id="pageItems" (change)="selectChangeHandler($event)">
+                                                    <option value="10" selected>10</option>
+                                                    <option value="15">15</option>
+                                                    <option value="20">20</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-auto">
+                                                <label for="propertySearch" class="sr-only">Search</label>
+                                                <input type="text" class="form-control"  placeholder="Search"  [(ngModel)]="name"
+                                                (keyup)="searchOffense()" name="name">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <table class="table table-borderless table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>ID &nbsp;</th>
+                                            <th>Name &nbsp;</th>
+                                            <th>Description &nbsp;</th>
+                                            <th>Fine &nbsp; <i class="fa fa-sort"></i></th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="t_body">
+                                        <tr *ngFor="let offense of offenses | orderBy: key: reverse |
+                                        paginate:{ itemsPerPage:viewItems,
+                                        currentPage:page,
+                                    totalItems:totalLength }">
+                                            <td>
+                                                <p class="mb-0 text-muted">{{offense.id}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 text-muted">{{offense.name}}</p>
+                                            </td>
+                                            <td class="w-40">
+                                                <p class="mb-0 text-muted" style=" white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 50ch;">{{offense.description}}</p>
+                                              
+                                            </td>
+                                            <td>
+                                                <p class="mb-0 text-muted">${{offense.price}}</p>
+                                              
+                                            </td>
+                                            
+                                            <td>
+                                                <button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="text-muted sr-only">Action</span>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" (click)="updateOffense(offense.id)">Edit</a>
+                                                    <a class="dropdown-item" (click)="deleteOffense(offense.id)">Delete</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                 <nav aria-label="Table Paging" class="mb-0 text-muted">
+                                    <pagination-controls aria-label="Table Paging" class="my-pagination mb-0 text-muted text-center page-item"
+                                         previousLabel="Previous" nextLabel="Next" style="font-size: 14px;">
+                                    </pagination-controls>
+                                </nav>            
+                            </div>
+                         </div>
+                    </div>                        
+                </div>
+             </div>       
+        </div>
+    </div>
+</main>            
